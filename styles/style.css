@@ -1,0 +1,138 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Shared Items */
+.primary-btn{
+    padding: 15px 45px;
+    border: none;
+    background-color: rgba(229, 84, 115, 1);
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.lato-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.light-gray{
+    color: rgba(39, 39, 39, 0.6);
+}
+.flex{
+    display: flex;
+}
+/* Header */
+.header{
+    background-color: rgba(229, 84, 115, 0.1);
+    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    padding: 0 50px;
+}
+.header-content{
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 100px;
+}
+.header-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.header-description{
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+.head-image img{
+    
+}
+
+/* Main */
+/* Featured Section */
+.featured-section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.featured-header{
+    
+    padding: 150px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.featured-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.featured-description{
+    line-height: 27px;
+    width: 594px;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.featured-flowers{
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.featured-flower{
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    
+}
+.featured-flower a{
+    font-size: 1.5rem;
+    color: rgba(39, 39, 39, 1);
+}
+.img1{
+    background-color: rgba(167, 33, 98, 0.15);
+    border-radius: 1000px  1000px 0 0;
+}
+.img2{
+    background-color: rgba(5, 151, 160, 0.15);
+    border-radius: 1000px  1000px 0 0;
+}
+.img3{
+    background-color: rgba(71, 125, 17, 0.15);
+    border-radius: 1000px  1000px 0 0;
+}
+.featured-flowers  img{
+    width: 300px;
+    height: 350px;
+    padding: 100px 30px 0px 30px;
+    margin-bottom: 0px;
+
+}
+
+@media screen and (max-width:576px) {
+    .header-content{
+        padding: 15px;
+        width: 100%;
+        margin: 0 auto;
+        width: 500px;
+    }
+    .head-image{
+        display: none;
+    }
+    .featured-flowers{
+        flex-direction: column;
+    }
+    
+}
