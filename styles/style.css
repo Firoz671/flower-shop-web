@@ -26,6 +26,7 @@
 
 .light-gray{
     color: rgba(39, 39, 39, 0.6);
+    
 }
 .flex{
     display: flex;
@@ -60,10 +61,10 @@
 
 /* Main */
 /* Featured Section */
-.featured-section{
+/* .featured-section{
     max-width: 1440px;
     margin: 0 auto;
-}
+} */
 .featured-header{
     
     padding: 150px;
@@ -120,7 +121,28 @@
     margin-bottom: 0px;
 
 }
-
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* Service Section */
+.service-section{
+    margin-top: 28px;
+    background-color: rgba(39, 39, 39, 0.05);
+    border-radius: 8px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+.service-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(39, 39, 39, 0.8);
+    
+}
 @media screen and (max-width:576px) {
     .header-content{
         padding: 15px;
