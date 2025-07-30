@@ -131,7 +131,6 @@ main{
     background-color: rgba(39, 39, 39, 0.05);
     border-radius: 8px;
     height: 320px;
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -143,6 +142,42 @@ main{
     color: rgba(39, 39, 39, 0.8);
     
 }
+/* Deals Section */
+.hot-deals-section{
+    padding: 100px;
+    height: 500px;
+    background-color: rgba(229, 84, 115, 0.05);
+    border-radius: 8px;
+    margin-top: 70px;
+    justify-content: space-around;
+    align-items: center;
+}
+.hot-deals-info{
+    width: 594px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    
+}
+.deal-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.deal-description{
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+}
+.hot-deals-section button{
+    background-color: rgba(229, 84, 115, 1);
+    color: #FFFFFF;
+    padding: 20px 43px;
+    border-radius: 8px;
+    border: navajowhite;
+    width: 150px;
+    height: 50px;
+}
+
 @media screen and (max-width:576px) {
     .header-content{
         padding: 15px;
@@ -153,8 +188,20 @@ main{
     .head-image{
         display: none;
     }
-    .featured-flowers{
+    .featured-flowers,.hot-deals-section{
         flex-direction: column;
     }
+    .hot-deals-info{
+        padding: 100px;
+    }
+    .hot-deals-section{
+        height: 1000px;
+    }
+    .service-section{
+        width: 576px;
+        flex-direction: column;
+        height: 500px;
+    }
+    
     
 }
